@@ -32,8 +32,7 @@ int	main(int argc, char **argv)
 		if (compare_tabs(values, args))
 		{	
 			print_tab(tab);
-			tabfree2(tab, values, args);
-			return (0);
+			return (tabfree2(tab, values, args));
 		}
 		tabfree2(tab, values, NULL);
 	}
